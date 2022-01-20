@@ -10,3 +10,4 @@ funny_interview
 - [通信协议](./protocol/README.md)
 - [go](./go/README.md)
 - [python](./python/README.md)
+- [k8s](./k8s/README.md)
