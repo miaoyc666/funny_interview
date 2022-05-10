@@ -11,3 +11,5 @@ funny_interview
 - [go](./go/README.md)
 - [python](./python/README.md)
 - [k8s](./k8s/README.md)
+- [mysql](./mysql/README.md)
+
