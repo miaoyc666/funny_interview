@@ -27,9 +27,7 @@ M运行G，G执行之后，M会从P获取下一个G，不断重复下去。
 * M，代表一个内核线程，goroutine是跑在M之上的。线程想运行任务就得获取P，从P的本地队列获取G，P队列为空时，M也会尝试从全局队列拿一批G放到P的本地队列，或从其他P的本地队列偷一半放到自己P的本地队列。M运行G，G执行之后，M会从P获取下一个G，不断重复下去。
 * P，processor，是 goroutine 执行所必须的上下文环境，可以理解为协程处理器，是用来执行 goroutine 的。processor 维护着可运行的 goroutine 队列，里面存储着所有需要它来执行的 goroutine。
 * G，协程。
+![gpm](../image/go-gpm.png)
 
 #### 6.gc与gccgo有什么差别？
 gc与gccgo都是go语言标准规范的不同实现。gc是go默认自带的编译器，gccgo需要跟随gcc单独安装。gc使用简单，gccgo使用复杂并且不能使用go工具链。gccgo支持编译选项更多，通常来讲gccgo编译出来的程序性能更高。
-
-
-![gpm](../image/go-gpm.png)
